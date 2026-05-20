@@ -11,16 +11,16 @@ const theme = {
 };
 
 const skills = [
-  { name: "Microsoft Dynamics 365 CE", level: 95, category: "CRM" },
-  { name: "Power Apps (Model-Driven & Canvas)", level: 90, category: "Power Platform" },
-  { name: "Power Automate", level: 92, category: "Power Platform" },
-  { name: "Dataverse", level: 88, category: "Power Platform" },
-  { name: "C# / Plugin Development", level: 85, category: "Development" },
-  { name: "JavaScript / Web Resources", level: 83, category: "Development" },
-  { name: "Custom APIs & Integration", level: 80, category: "Development" },
-  { name: "Sales, Customer Service & Marketing Modules", level: 90, category: "CRM" },
-  { name: "Azure DevOps / ALM", level: 75, category: "DevOps" },
-  { name: "SQL / FetchXML / OData", level: 82, category: "Development" },
+  // { name: "Microsoft Dynamics 365 CE", category: "CRM" },
+  // { name: "Power Apps (Model-Driven & Canvas)", category: "Power Platform" },
+  // { name: "Power Automate", category: "Power Platform" },
+  // { name: "Dataverse", category: "Power Platform" },
+  // { name: "C# / Plugin Development", category: "Development" },
+  // { name: "JavaScript / Web Resources", category: "Development" },
+  // { name: "Custom APIs & Integration", category: "Development" },
+  // { name: "Sales, Customer Service & Marketing Modules", category: "CRM" },
+  // { name: "Azure DevOps / ALM", category: "DevOps" },
+  // { name: "SQL / FetchXML / OData", category: "Development" },
 ];
 
 const experience = [
@@ -312,7 +312,7 @@ export default function Portfolio() {
             <img
               src={`data:image/jpeg;base64,${PHOTO_B64}`}
               alt="Rutvik Gohil"
-              style={{ width: 320, height: 320, borderRadius: "50%", objectFit: "cover", display: "block", position: "relative", zIndex: 1, border: `4px solid ${dark ? "#0A0A0F" : "#F8F7F4"}` }}
+              style={{ width: 320, height: 320, borderRadius: "50%", objectFit: "cover", display: "block", position: "relative", zIndex: 2, border: `4px solid ${dark ? "#0A0A0F" : "#F8F7F4"}` }}
             />
             {/* Floating chips */}
             <div style={{ position: "absolute", top: -10, right: -60, background: cardBg, border: `1px solid ${border}`, borderRadius: 12, padding: "8px 14px", whiteSpace: "nowrap", boxShadow: "0 8px 32px rgba(0,0,0,0.15)", zIndex: 2 }}>
@@ -321,7 +321,7 @@ export default function Portfolio() {
             </div>
             <div style={{ position: "absolute", bottom: 10, left: -70, background: cardBg, border: `1px solid ${border}`, borderRadius: 12, padding: "8px 14px", whiteSpace: "nowrap", boxShadow: "0 8px 32px rgba(0,0,0,0.15)", zIndex: 2 }}>
               <div style={{ fontSize: 14, color: textMuted, fontWeight: 500 }}>Location</div>
-              <div style={{ fontSize: 14, fontWeight: 700, color: text, fontFamily: "'Sora', sans-serif" }}>📍 Gujarat, IN</div>
+              <div style={{ fontSize: 14, fontWeight: 700, color: text, fontFamily: "'Sora', sans-serif" }}>📍 Gandhinagar, Gujarat, India</div>
             </div>
           </div>
         </div>
@@ -513,88 +513,10 @@ export default function Portfolio() {
           <p style={labelStyle}>Get In Touch</p>
           <h2 style={h2Style}>Let's Work Together</h2>
           <p style={{ color: textMuted, fontSize: 16, marginBottom: 48, maxWidth: 520 }}>
-            Whether you have a project in mind or just want to connect - my inbox is always open.
+            I’m open to new opportunities, collaborations, or just a tech chat. Feel free to contact me.
           </p>
 
           <div style={{ display: "flex", gap: 48, flexWrap: "wrap" }}>
-
-            {/* LEFT - Social contact cards 2x2 grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, flex: "0 0 auto", alignContent: "start" }}>
-              {/* Gmail */}
-              <a href="mailto:rutvikgohil246@gmail.com" style={{ textDecoration: "none" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 14, background: cardBg, border: `1px solid ${border}`, borderRadius: 16, padding: "18px 20px", transition: "all 0.25s", height: "100%" }} className="card-hover">
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(234,67,53,0.12)", border: "1.5px solid rgba(234,67,53,0.25)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                    <svg width="20" height="20" viewBox="0 0 48 48" fill="none">
-                      <path d="M4 10l20 14L44 10" stroke="#EA4335" strokeWidth="3.5" strokeLinecap="round" />
-                      <rect x="4" y="10" width="40" height="28" rx="2" stroke="#EA4335" strokeWidth="2.5" fill="none" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 10, color: textMuted, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", fontFamily: "'Sora', sans-serif", marginBottom: 3 }}>Gmail</div>
-                    <div style={{ fontSize: 12, color: text, fontWeight: 500, wordBreak: "break-all" }}>rutvikgohil246@gmail.com</div>
-                  </div>
-                </div>
-              </a>
-
-              {/* LinkedIn */}
-              <a href="https://www.linkedin.com/in/rutvik-gohil-1933bb215" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 14, background: cardBg, border: `1px solid ${border}`, borderRadius: 16, padding: "18px 20px", transition: "all 0.25s", height: "100%" }} className="card-hover">
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(10,102,194,0.12)", border: "1.5px solid rgba(10,102,194,0.25)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 10, color: textMuted, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", fontFamily: "'Sora', sans-serif", marginBottom: 3 }}>LinkedIn</div>
-                    <div style={{ fontSize: 12, color: text, fontWeight: 500, wordBreak: "break-all" }}>rutvik-gohil-1933bb215</div>
-                  </div>
-                </div>
-              </a>
-
-              {/* GitHub */}
-              <a href="https://github.com/RutvikGohil24" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 14, background: cardBg, border: `1px solid ${border}`, borderRadius: 16, padding: "18px 20px", transition: "all 0.25s", height: "100%" }} className="card-hover">
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: dark ? "rgba(255,255,255,0.07)" : "rgba(0,0,0,0.06)", border: `1.5px solid ${border}`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill={dark ? "#fff" : "#24292e"}>
-                      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 10, color: textMuted, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", fontFamily: "'Sora', sans-serif", marginBottom: 3 }}>GitHub</div>
-                    <div style={{ fontSize: 12, color: text, fontWeight: 500 }}>RutvikGohil24</div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Location */}
-              <div style={{ display: "flex", alignItems: "center", gap: 14, background: cardBg, border: `1px solid ${border}`, borderRadius: 16, padding: "18px 20px", height: "100%" }}>
-                <div style={{ width: 44, height: 44, borderRadius: 12, background: theme.primaryGlow2, border: `1.5px solid ${theme.primary}33`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke={theme.primary} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
-                  </svg>
-                </div>
-                <div>
-                  <div style={{ fontSize: 10, color: textMuted, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", fontFamily: "'Sora', sans-serif", marginBottom: 3 }}>Location</div>
-                  <div style={{ fontSize: 12, color: text, fontWeight: 500 }}>Gandhinagar, Gujarat, India</div>
-                </div>
-              </div>
-
-              {/* Phone - spans full width */}
-              <a href="tel:+918238780051" style={{ textDecoration: "none", gridColumn: "1 / -1" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 14, background: cardBg, border: `1px solid ${border}`, borderRadius: 16, padding: "18px 20px", transition: "all 0.25s", height: "100%" }} className="card-hover">
-                  <div style={{ width: 44, height: 44, borderRadius: 12, background: "rgba(34,197,94,0.12)", border: "1.5px solid rgba(34,197,94,0.25)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3-8.63A2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 10, color: textMuted, fontWeight: 700, letterSpacing: 1.2, textTransform: "uppercase", fontFamily: "'Sora', sans-serif", marginBottom: 3 }}>Phone</div>
-                    <div style={{ fontSize: 12, color: text, fontWeight: 500 }}>+91 82387 80051</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
             {/* RIGHT - Contact Form */}
             <div style={{ flex: 1, minWidth: 300 }}>
               <div style={{ background: cardBg, border: `1px solid ${border}`, borderRadius: 20, padding: "36px 32px", boxShadow: dark ? "0 4px 32px rgba(0,0,0,0.3)" : "0 4px 24px rgba(0,0,0,0.06)" }}>
@@ -743,29 +665,265 @@ function ContactForm({ dark, text, textMuted, border, cardBg }) {
   );
 }
 function SkillsGrid({ dark, text, textMuted, border }) {
-  const [ref, inView] = [useRef(null), useRef(false)];
+  const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold: 0.1 });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
   }, []);
+
+  const techIcons = [
+    {
+      name: "Power Apps",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pa1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#C539B4" />
+              <stop offset="100%" stopColor="#7B2D8B" />
+            </linearGradient>
+            <linearGradient id="pa2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#E062AE" />
+              <stop offset="100%" stopColor="#C539B4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#pa1)" />
+          <polygon points="24,8 38,24 24,40 10,24" fill="url(#pa2)" opacity="0.9" />
+          <polygon points="24,14 34,24 24,34 14,24" fill="white" opacity="0.95" />
+          <circle cx="24" cy="24" r="5" fill="url(#pa1)" />
+        </svg>
+      ),
+    },
+    {
+      name: "Power Automate",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pau1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#2D7AE0" />
+              <stop offset="100%" stopColor="#0A40B5" />
+            </linearGradient>
+            <linearGradient id="pau2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#5EA4F5" />
+              <stop offset="100%" stopColor="#2D7AE0" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#pau1)" />
+          {/* Right-pointing chevron / arrow shape like official icon */}
+          <path d="M10 14h16l12 10-12 10H10l12-10z" fill="url(#pau2)" />
+          <path d="M22 14h16l-12 10 12 10H22L10 24z" fill="white" opacity="0.2" />
+        </svg>
+      ),
+    },
+    {
+      name: "Power BI",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pbi1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#F5D247" />
+              <stop offset="100%" stopColor="#E8A800" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="white" />
+          {/* Bar chart bars - official Power BI style */}
+          <rect x="8" y="30" width="8" height="10" rx="2" fill="#E8A800" opacity="0.6" />
+          <rect x="20" y="22" width="8" height="18" rx="2" fill="#F5D247" />
+          <rect x="32" y="14" width="8" height="26" rx="2" fill="#F2C811" />
+          {/* Small top accent */}
+          <circle cx="36" cy="10" r="4" fill="#F5D247" opacity="0.8" />
+        </svg>
+      ),
+    },
+    {
+      name: "Dataverse",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="dv1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0F6CBD" />
+              <stop offset="100%" stopColor="#115EA3" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#dv1)" />
+          {/* Stacked cylinder / database shape */}
+          <ellipse cx="24" cy="14" rx="13" ry="5" fill="white" opacity="0.9" />
+          <rect x="11" y="14" width="26" height="7" fill="white" opacity="0.6" />
+          <ellipse cx="24" cy="21" rx="13" ry="5" fill="white" opacity="0.75" />
+          <rect x="11" y="21" width="26" height="7" fill="white" opacity="0.45" />
+          <ellipse cx="24" cy="28" rx="13" ry="5" fill="white" opacity="0.6" />
+          <rect x="11" y="28" width="26" height="6" fill="white" opacity="0.3" />
+          <ellipse cx="24" cy="34" rx="13" ry="5" fill="white" opacity="0.5" />
+        </svg>
+      ),
+    },
+    {
+      name: "Dynamics 365",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="d365a" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#1B6EC2" />
+              <stop offset="100%" stopColor="#0D47A1" />
+            </linearGradient>
+            <linearGradient id="d365b" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#00BCF2" />
+              <stop offset="100%" stopColor="#0078D4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#d365a)" />
+          {/* Circular orbit / CRM icon shape */}
+          <circle cx="24" cy="24" r="14" fill="none" stroke="white" strokeWidth="2.5" opacity="0.4" />
+          <circle cx="24" cy="24" r="8" fill="none" stroke="white" strokeWidth="2.5" opacity="0.7" />
+          <circle cx="24" cy="24" r="4" fill="white" />
+          {/* Orbit dot */}
+          <circle cx="38" cy="24" r="3.5" fill="url(#d365b)" />
+          <circle cx="10" cy="24" r="3.5" fill="url(#d365b)" opacity="0.7" />
+          <circle cx="24" cy="10" r="3.5" fill="url(#d365b)" opacity="0.5" />
+        </svg>
+      ),
+    },
+    {
+      name: "Azure",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="az1" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#0078D4" />
+              <stop offset="50%" stopColor="#1FA2FF" />
+              <stop offset="100%" stopColor="#0FD0FF" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="white" />
+          {/* Official Azure "A" mountain shape */}
+          <path d="M18 38L27 14l9 12H27l-3-4-6 16z" fill="url(#az1)" />
+          <path d="M10 38l10-8h16l-5-8-7 20z" fill="#0078D4" opacity="0.5" />
+          <path d="M27 14L18 26h18z" fill="url(#az1)" />
+        </svg>
+      ),
+    },
+    {
+      name: "C# / .NET",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cs1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#9B4FE8" />
+              <stop offset="100%" stopColor="#512BD4" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#cs1)" />
+          {/* Official .NET purple "C#" */}
+          <text x="6" y="34" fontSize="24" fontWeight="900" fill="white" fontFamily="'Segoe UI',Arial,sans-serif">C#</text>
+        </svg>
+      ),
+    },
+    {
+      name: "Azure DevOps",
+      icon: (
+        <svg viewBox="0 0 48 48" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ado1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#0078D7" />
+              <stop offset="100%" stopColor="#005A9E" />
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="8" fill="url(#ado1)" />
+          {/* DevOps infinite loop / pipeline shape */}
+          <path d="M10 20 Q10 10 20 10 L28 10 Q38 10 38 20 L38 22 Q38 28 32 28 L22 28" fill="none" stroke="white" strokeWidth="3.5" strokeLinecap="round" />
+          <path d="M38 28 Q38 38 28 38 L20 38 Q10 38 10 28 L10 26 Q10 20 16 20 L26 20" fill="none" stroke="white" strokeWidth="3.5" strokeLinecap="round" opacity="0.65" />
+          {/* Arrow heads */}
+          <polygon points="22,23 26,28 22,33" fill="white" opacity="0.65" />
+          <polygon points="26,15 22,20 26,25" fill="white" />
+        </svg>
+      ),
+    },
+  ];
+
   const categories = [...new Set(skills.map(s => s.category))];
+
+  const skillIcons = {
+    "Microsoft Dynamics 365 CRM": "/icons/dynamics365.png",
+    "Sales & Customer Service Modules": "/icons/dynamics365.png",
+    "Power Apps (Model-Driven & Canvas)": "/icons/powerapps.png",
+    "Power Automate": "/icons/powerautomate.png",
+    "Dataverse": "/icons/dataverse.png",
+    "Azure DevOps / ALM": "/icons/azure.png",
+  };
+
   return (
-    <div ref={ref} style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+    <div ref={ref} style={{ display: "flex", flexDirection: "column", gap: 36 }}>
+      {/* Microsoft Tech Icon Strip */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(100px, 1fr))", gap: 14 }}>
+        {techIcons.map((tech, i) => (
+          <div key={i} style={{
+            display: "flex", flexDirection: "column", alignItems: "center", gap: 10,
+            background: dark ? "rgba(255,255,255,0.04)" : "rgba(0,0,0,0.02)",
+            border: `1px solid ${border}`, borderRadius: 16, padding: "18px 10px",
+            transition: "all 0.25s", cursor: "default",
+          }} className="card-hover">
+            {tech.icon}
+            <span style={{ fontSize: 10, fontWeight: 600, color: textMuted, textAlign: "center", lineHeight: 1.4, fontFamily: "'Sora', sans-serif" }}>{tech.name}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Skill bars by category */}
       {categories.map(cat => (
         <div key={cat}>
-          <h3 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 700, fontSize: 13, color: theme.primary, letterSpacing: 2, textTransform: "uppercase", marginBottom: 16 }}>{cat}</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {skills.filter(s => s.category === cat).map((skill, i) => (
-              <div key={i} className="skill-item" style={{ background: dark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.02)", border: `1px solid ${border}`, borderRadius: 14, padding: "16px 20px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
-                  <span className="skill-name" style={{ fontSize: 14, fontWeight: 500, color: text, transition: "color 0.2s" }}>{skill.name}</span>
-                  <span style={{ fontSize: 13, fontWeight: 700, color: theme.primary, fontFamily: "'Sora', sans-serif" }}>{skill.level}%</span>
+          <h3 style={{ fontFamily: "'Sora', sans-serif", fontWeight: 700, fontSize: 12, color: theme.primary, letterSpacing: 2, textTransform: "uppercase", marginBottom: 14 }}>{cat}</h3>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {skills.filter(s => s.category === cat).map((skill, i) => {
+              const ic = skillIcons[skill.name] || { bg: theme.primary, color: "#fff" };
+              return (
+                <div key={i} className="skill-item" style={{ background: dark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.02)", border: `1px solid ${border}`, borderRadius: 14, padding: "14px 18px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                      <div
+                        style={{
+                          width: 34,
+                          height: 34,
+                          borderRadius: 8,
+                          background: "#fff",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          overflow: "hidden",
+                          flexShrink: 0,
+                          padding: 4,
+                        }}
+                      >
+                        {skillIcons[skill.name] ? (
+                          <img
+                            src={skillIcons[skill.name]}
+                            alt={skill.name}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "contain",
+                            }}
+                          />
+                        ) : (
+                          <span
+                            style={{
+                              fontSize: 12,
+                              fontWeight: 700,
+                              color: "#fff",
+                            }}
+                          >
+                            •
+                          </span>
+                        )}
+                      </div>
+                      <span className="skill-name" style={{ fontSize: 13, fontWeight: 500, color: text, transition: "color 0.2s" }}>{skill.name}</span>
+                    </div>
+                    <span style={{ fontSize: 12, fontWeight: 700, color: theme.primary, fontFamily: "'Sora', sans-serif", flexShrink: 0, marginLeft: 8 }}>{skill.level}%</span>
+                  </div>
+                  <AnimatedBar level={skill.level} inView={visible} color={theme.primary} />
                 </div>
-                <AnimatedBar level={skill.level} inView={visible} color={theme.primary} />
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       ))}
